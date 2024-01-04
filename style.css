@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet');
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Kanit', sans-serif;
+
+}
+
+html,body{
+    height: 100%;
+    width: 100%
+
+}
+
+.main{
+     width: 100%;
+     height:100%;
+     /* background-color:aliceblue; */
+     position: relative;
+     
+
+}
+
+.navbar{
+    width: 100%;
+    height: 80px;
+    /* background-color: rgb(73, 77, 60); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5vw;
+    background-color: rgb(138, 198, 233);
+    border-bottom: 2px solid #6d6868
+    
+}
+.child {
+    justify-content: space-between;
+    display: flex;
+    gap:2vw;
+    align-items: center;
+}
+.navbar h2{
+    font-size: 2vw;
+    font-weight: 700;
+}
+.navbar i{
+    display:none;
+    font-weight: 800;
+    font-size: 1.2vw;
+}
+.navbar img{
+    height: 60px;
+    border-radius: 50%;
+}
+.content{
+/* background-color: blue; */
+height: calc(100% - 80px);
+width: 100%;
+display: flex;
+position: relative;
+}
+
+.left{
+    height: 100%;
+    width: 58%;
+    /* background-color: azure; */
+    padding: 5vw 6vw;
+    
+}
+
+.left h1{
+    font-size: 4.5vw;
+    line-height:4vw ;
+    color: rgb(66, 48, 48)
+}
+
+.left span{
+    color: cadetblue;
+}
+
+.left p{
+    font-size: 1.2vw;
+    font-weight: 600;
+    /* padding: 3vw; */
+    width: 80%;
+    margin-top: 3vw;
+    margin-bottom: 4vw;
+    
+
+}
+.right{
+    height: 100%;
+    width: 48%;
+    /* background-color: blueviolet */
+}
+.right img{
+    height: 100%;
+    width: 100%;
+}
+button{
+    font-size: 1.5vw;
+    padding: 1vw 2.3vw;
+    border-radius: 6px;
+    background-color: rgb(74, 158, 195);;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+}
+@media (max-width:600px) {
+    .navbar{
+        background-color: rgb(202, 228, 232);
+        padding:0 5vw;
+        height: 60px;
+    }
+    .navbar h2{
+        font-size: 5vw;
+    }
+    .navbar h4{
+        font-size: 4vw;
+        display: none;
+    }
+    .navbar i{
+        font-size:4vw;
+       
+        display:block;
+    }
+
+    .navbar img{
+        height: 40px;
+        border-radius: 50%;
+    }
+    .content{
+        /* background-color: rgb(77, 77, 166); */
+        height: calc(100% - 80px);
+       flex-direction: column;
+        }
+
+        .left{
+            height: 40%;
+            width: 100%;
+            /* background-color: azure; */
+            padding: 5vw 6vw;
+            
+        }
+        .right{
+            /* background-color: aquamarine; */
+            width: 100%;
+            height: 100%;
+        }
+
+        .right img{
+            height: 80%;
+padding: 3vw;
+        }
+    .left h1{
+        font-size: 9vw;
+        line-height:10vw ;
+        color: rgb(22, 19, 19)
+    }
+    
+    .left p{
+        font-size: 3vw;
+        font-weight: 600;
+        /* padding: 3vw; */
+        width: 100%;
+        margin-top: 3vw;
+        margin-bottom: 9vw;
+
+    }
+
+    button{
+        font-size: 4vw;
+        padding: 1vw 2.3vw;
+        border-radius: 9px;
+        background-color: rgb(127, 182, 234);;
+        font-weight: 600;
+    }
+}
